@@ -1,0 +1,16 @@
+name: 'Unzip file'
+description: 'Unzips a .zip file'
+inputs:
+  file:
+    description: '.zip file to unzip'
+    required: true
+  path:
+    description: 'Path to extract to'
+    required: true
+    default: ''
+outputs:
+  path:
+    description: 'Folder containing extracted files'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
